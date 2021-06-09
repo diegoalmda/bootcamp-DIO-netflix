@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>página de Login - NETFLIX CLONE</title>
+  <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="img/logo.png" alt="">
+      </div>
+    </nav>
+    <div class="login-form">
+      <fieldset>
+        <div class="form-data">
+          <h1>Entrar</h1>
+          <form action="index.html">
+            <p>
+              <input type="text" name="name" id="email" placeholder="E-mail ou número de telefone" required>
+            </p>
+            <p>
+              <input type="password" name="password" id="password" placeholder="Senha" required>
+            </p>
+            <p>
+              <button onclick="logar()" type="submit">Entrar</button>
+            </p>
+          </form>
+          <p id="check">
+            <span>
+              <label for="checkbox-ex">
+                <input type="checkbox" id="checkbox-ex" />
+                Lembre-se de mim
+              </label>
+            </span>
+            <span><a href="login.html">Precisa de ajuda?</a></span>
+          </p>
+        </div>
+			</fieldset>
+
+
+    </div>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+</html>
