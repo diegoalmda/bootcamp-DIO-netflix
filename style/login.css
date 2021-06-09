@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/home.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.container:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  margin: 10px 20px;
+  position: absolute;
+  z-index: 3;
+}
+
+.logo img {
+  width: 68%;
+}
+
+.login-form {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  width: 450px;
+  margin-top: 100px;
+  border-radius: 5px;
+  border: none;
+  padding: 60px;
+}
+
+.form-data {
+  width: 100%;
+}
+
+fieldset h1 {
+  margin-bottom: 20px;
+}
+
+fieldset p {
+  margin: 10px 0 10px 0;
+  width: 100%;
+}
+
+fieldset input[type="text"],
+fieldset input[type="password"] {
+  background-color: #444;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 5px 0;
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+fieldset input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+}
+
+p:last-child {
+  margin-top: 30px;
+}
+
+button {
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #fff;
+  background-color: red;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+#check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+#check a:visited {
+  color: #777;
+}
+
+#check a {
+  color: #777;
+}
+
+@media (max-width: 740px) {
+  body {
+    background: #000;
+  }
+
+  .container {
+    background: none;
+  }
+
+  .logo {
+    margin: 10px 5px;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+
+  .form-data {
+    margin-top: -30px;
+  }
+
+  fieldset {
+    width: 100%;
+    padding: 40px;
+  }
+}
